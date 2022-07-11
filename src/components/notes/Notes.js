@@ -3,7 +3,7 @@ import noteStyle from './Notes.module.css'
 import classNames from "classnames";
 import note from "./note.png"
 
-const  Notes = (props) =>  {
+const Notes = (props) => {
     return (
         <div className={noteStyle.container}>
             {/*{props.note.map(note => <div className={classNames(noteStyle.body, "card")} style={{"width": "1rem;"}}*/}
@@ -20,8 +20,8 @@ const  Notes = (props) =>  {
                     <li className={classNames(noteStyle.dateElement, "list-group-item")}>Note time</li>
                 </ul>
                 <div className={classNames(noteStyle.bodyButtonsBlock, "card-body")}>
-                    <button className={classNames(noteStyle.delete,"card-link")}>Delete</button>
-                    <button className={classNames(noteStyle.edit,"card-link")}>Edit</button>
+                    <button className={classNames(noteStyle.delete, "card-link")}>Delete</button>
+                    <button className={classNames(noteStyle.edit, "card-link")}>Edit</button>
                 </div>
             </div>
             {/*</div>)}*/}
