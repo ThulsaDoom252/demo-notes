@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+}
+
+.body {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.image {
+    width: 200px;
+}
+
+.dateElement, .body {
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.edit, .delete {
+    background-color: transparent;
+    border-style: none;
+}
+
+.edit {
+    color: green;
+}
+
+.delete {
+    color: red;
+}
+
