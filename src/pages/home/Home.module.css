@@ -8,20 +8,19 @@
     width: 100%;
 }
 
-
 .button {
-    position: relative;
+    margin-top: 400px;
+    margin-left: 900px;
     color: darkgray;
     font-size: 20px;
     font-family: Sabon;
     background-color: transparent;
     border-style: none;
-    left: 900px;
-    top: 350px;
 }
 
-.icon {
-
+.line {
+    color: darkblue;
+    margin-top: 75px;
 }
 
 .button:hover {

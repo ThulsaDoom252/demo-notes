@@ -1,0 +1,24 @@
+.container {
+    position: absolute;
+    bottom: 210px;
+    left: 690px;
+    height: 615px;
+    width: 550px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.input, .textArea {
+    opacity: 85%;
+    width: 500px;
+    resize: none;
+}
+
+.input {
+    position: relative;
+    top: 8px;
+}
+
+.textArea {
+    height: 80%;
+}
