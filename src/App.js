@@ -11,16 +11,16 @@ import {AlertState} from "./context/alert/AlertState";
 function App() {
     return (
         <AlertState>
-        <BrowserRouter>
-            <div className="App">
-                <NavBar/>
-                <Routes>
-                    <Route path={'/'} element={<Home/>}/>
-                    <Route path={'/about'} element={<About/>}/>
-                    <Route path={'/contacts'} element={<Contacts/>}/>
-                </Routes>
-            </div>
-        </BrowserRouter>
+            <BrowserRouter>
+                <div className="App">
+                    <NavBar/>
+                    <Routes>
+                        <Route path={'/'} element={<Home/>}/>
+                        <Route path={'/about'} element={<About/>}/>
+                        <Route path={'/contacts'} element={<Contacts/>}/>
+                    </Routes>
+                </div>
+            </BrowserRouter>
         </AlertState>
     );
 }
