@@ -5,12 +5,12 @@ import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contacts from "./pages/contacts/Contacts";
-import {AlertState} from "./context/alert/AlertState";
+import {NoteDataState} from "./context/alert/NoteDataState";
 
 
 function App() {
     return (
-        <AlertState>
+        <NoteDataState>
             <BrowserRouter>
                 <div className="App">
                     <NavBar/>
@@ -21,7 +21,7 @@ function App() {
                     </Routes>
                 </div>
             </BrowserRouter>
-        </AlertState>
+        </NoteDataState>
     );
 }
 

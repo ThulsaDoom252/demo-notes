@@ -1,25 +1,24 @@
 import React, {useContext, useState} from 'react';
 import editWindowStyle from "./NoteData.module.css"
-import {AlertContext} from "../../context/alert/AlertContext";
+import {NoteDataContext} from "../../context/alert/NoteDataContext";
 
-const NoteData = ({statePlug}) => {
+const NoteData = () => {
     const [title, setTitle] = useState(null)
     const [content, setContent] = useState(null)
-
-    const {show} = useContext(AlertContext)
+    const {noteData, showAlert, hideNoteData} = useContext(NoteDataContext)
 
     const addNote = () => {
         if (!title) {
-            return show()
+            return showAlert()
         } else {
             console.log('success')
-            statePlug.setShowNote(false)
+            hideNoteData()
             setTitle('')
             setContent('')
         }
 
     }
-    if (!statePlug.showNote) {
+    if (!noteData.noteDataVisible) {
         return null
     }
     return (
@@ -32,7 +31,7 @@ const NoteData = ({statePlug}) => {
                       onChange={e => setContent(e.target.value)}/>
             <br/>
             <div className={editWindowStyle.buttonsBlock}>
-                <button className={editWindowStyle.cancelButton} onClick={() => statePlug.setShowNote(false)}>Cancel
+                <button className={editWindowStyle.cancelButton} onClick={() => hideNoteData()}>Cancel
                 </button>
                 <button className={editWindowStyle.addButton} onClick={addNote}>Add</button>
                 <button hidden={true}>Save</button>
