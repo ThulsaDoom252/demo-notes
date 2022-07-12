@@ -6,6 +6,7 @@ import note from "./note.png"
 const Notes = (props) => {
     return (
         <div className={noteStyle.container}>
+            {/********************************** commented to render dummy Note template. Will be refactored soon */}
             {/*{props.note.map(note => <div className={classNames(noteStyle.body, "card")} style={{"width": "1rem;"}}*/}
             {/*                             key={note.id}>*/}
             <div className={classNames(noteStyle.body, "card")} style={{"width": "1rem;"}}>

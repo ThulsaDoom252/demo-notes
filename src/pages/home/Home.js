@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
 import homeStyle from "./Home.module.css"
 import {FiFilePlus} from "react-icons/fi";
-import EditWindow from "../../components/editwindow/EditWindow";
 import Notes from "../../components/notes/Notes";
 import Alert from "../../components/alert/Alert";
+import NoteData from "../../components/notedata/NoteData";
 
 const Home = () => {
-    const [write, writeMode] = useState(false)
+    const [showNote, setShowNote] = useState(false)
     return (
         <div className={homeStyle.container}>
-            <button className={homeStyle.button} onClick={() => writeMode(true)}>Add new note <FiFilePlus/></button>
+            <button className={homeStyle.button} onClick={() => setShowNote(true)}>Add new note <FiFilePlus/></button>
             <Alert/>
-            <EditWindow write={{write, writeMode}}/>
+            <NoteData statePlug={{showNote, setShowNote}}/>
             <hr className={homeStyle.line}/>
             <Notes/>
         </div>
