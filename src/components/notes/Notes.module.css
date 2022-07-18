@@ -3,6 +3,16 @@
     grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
 }
 
+.labelEmpty {
+    position: relative;
+    font-style: italic;
+    color:  cyan;
+    font-size: 30px;
+    left: 850px;
+    top: 150px;
+    width: 500px;
+}
+
 .body {
     margin-left: 30px;
     width: 200px;
