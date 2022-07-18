@@ -1,6 +1,6 @@
 .container {
     position: absolute;
-    background-image: url("https://cdn.wallpapersafari.com/83/54/b9KGv4.jpg");
+    /*background-image: url("https://cdn.wallpapersafari.com/83/54/b9KGv4.jpg");*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,24 +8,12 @@
     width: 100%;
 }
 
-.button {
-    margin-top: 200px;
-    margin-left: 900px;
-    color: darkgray;
-    font-size: 20px;
-    font-family: Sabon;
-    background-color: transparent;
-    border-style: none;
-}
+
 
 .line {
     color: darkblue;
-    margin-top: 75px;
+    margin-top: 350px
 }
 
-.button:hover {
-    transition: 1s;
-    color: blue;
-    font-size: 24px;
-}
+
 
